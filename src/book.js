@@ -2,36 +2,29 @@ function createTitle(title) {
   //return "The " + title;
   //for (var i = 0; i < createTitle.length; i++) {
   return "The " + title;
-  }
+}
 //}
 createTitle("Storm's Awakening");
 
-function buildMainCharacter (name, age, pronouns) {
+function buildMainCharacter(name, age, pronouns) {
   var character = {
     name: name,
     age: age,
     pronouns: pronouns,
   };
   return character;
-  }
+}
 //
 
-
-
-
-
-
-
-  function saveReview (string, reviews) {
-    for (var i = 0; i <= reviews.length; i++) {
-      if (reviews[i] !== string) {
-        return reviews.push(string);
-      } else {return reviews};
+function saveReview(string, reviews) {
+  for (var i = 0; i <= reviews.length; i++) {
+    if (reviews[i] !== string) {
+      return reviews.push(string);
+    } else {
+      return reviews;
     }
   }
-
-
-
+}
 
 /*
 function saveReview (string, reviews) {
@@ -47,36 +40,26 @@ function saveReview (string, reviews) {
 }
 */
 
-
-
-
-
-function calculatePageCount (bookTitle) {
-  return bookPageCount = bookTitle.length * 20;
-
+function calculatePageCount(bookTitle) {
+  return bookTitle.length * 20;
 }
 
-function writeBook (bookTitle, bookCharacter, bookGenre) {
+function writeBook(bookTitle, bookCharacter, bookGenre) {
   var bookInfo = {
     title: bookTitle,
     mainCharacter: bookCharacter,
     pageCount: calculatePageCount(bookTitle),
-    genre: bookGenre
-  }
-return bookInfo
+    genre: bookGenre,
+  };
+  return bookInfo;
 }
 
-
-function editBook (dragonBook) {
-dragonBook.pageCount = bookPageCount * .75;
-//why does this work ^^^^ where does bookPageCount come from???
-//console.log(dragonBook);
+function editBook(dragonBook) {
+  dragonBook.pageCount = dragonBook.pageCount * 0.75;
+  //why does this work ^^^^ where does bookPageCount come from???
+  //console.log(dragonBook);
+  return;
 }
-
-
-
-
-
 
 module.exports = {
   createTitle,
@@ -84,11 +67,7 @@ module.exports = {
   saveReview,
   calculatePageCount,
   writeBook,
-  editBook
-}
-
-
-
-
+  editBook,
+};
 
 //for (var i = 0; i < )
