@@ -20,11 +20,16 @@ problem.
   - Understand how to declare variables and assign data to them
   - Practice using objects and arrays
 
-## Setup
+  ### Project Spec
+  - The project spec can be found [here](https://frontend.turing.io/projects/module-1/library.html).
 
-  - Fork this project to your own Github account
-  - clone the repository to your local machine
-  - `cd` into the project
-  - run `npm install` to install the necessary dependencies
-  
-  The project spec can be found [here](https://frontend.turing.io/projects/module-1/library.html).
+
+### Technologies Used
+- JavaScript
+
+### Sources
+- MDN
+- W3SCHOOLS
+- Turing Front End Lessons
+
+### Contributor: Kendall McGree
